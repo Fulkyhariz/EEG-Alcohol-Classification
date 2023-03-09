@@ -316,8 +316,7 @@ class Bispectrum(object):
             
         else:
             self.bispec = fftshift(fft2(ifftshift(self.cum3 * self.window)))
-            
-
+        
         self.bispec_mag = np.abs(self.bispec)
         self.bispec_phase = np.angle((self.bispec))
 
