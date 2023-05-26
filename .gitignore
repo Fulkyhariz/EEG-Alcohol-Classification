@@ -12,4 +12,4 @@
 *.zip
 *.csv
 *.npy
-*events.out.tfevents*
+events.out.tfevents*
