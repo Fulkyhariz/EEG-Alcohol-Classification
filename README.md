@@ -116,5 +116,6 @@ This project uses 2 kinds of classifier, CNN and ANN, the CNN will uses Conv1D a
 The model evaluation is using 2-fold cross validation as seen in this image:
 
 <p align="center">
-    <img src="https://github.com/Fulkyhariz/EEG-Alcohol-Classification/blob/main/Image/bispec_feature_contour.png?raw=true" width = '60%'>
+    <img src="https://github.com/Fulkyhariz/EEG-Alcohol-Classification/blob/main/Image/cross%20validation.drawio.png?raw=true" width = '80%'>
 </p>
+
