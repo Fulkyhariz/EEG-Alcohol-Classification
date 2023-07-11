@@ -7,7 +7,7 @@ This is a project for my final year thesis, I compare two feature extraction met
 ## Environment
 
 <p align="center">
-    <img src="https://github.com/Fulkyhariz/EEG-Alcohol-Classification/blob/main/Image/Environment.jpg?raw=true" width = '80%'>
+    <img src="https://github.com/Fulkyhariz/EEG-Alcohol-Classification/blob/main/Image/Environment.jpg?raw=true" width = '60%'>
 </p>
 
 <div style="text-align: justify">
@@ -21,7 +21,7 @@ The are two method that is used to extract the feature of the data, that is RWB 
 
 ### RWB (Relative Wavelet Bispectrum)
 <p align="center">
-    <img src="https://github.com/Fulkyhariz/EEG-Alcohol-Classification/blob/main/Image/RWB%20Paper.png?raw=true" width = '80%'>
+    <img src="https://github.com/Fulkyhariz/EEG-Alcohol-Classification/blob/main/Image/RWB%20Paper.png?raw=true" width = '60%'>
 </p>
 
 <p align="justify">
@@ -29,7 +29,7 @@ The autocorrelation and 3rd order cumulant matrix is calculated using the <a hre
 </p>
 
 <p align="center">
-    <img src="https://github.com/Fulkyhariz/EEG-Alcohol-Classification/blob/main/Image/RWB%20Formula.jpg?raw=true" width = '80%'>
+    <img src="https://github.com/Fulkyhariz/EEG-Alcohol-Classification/blob/main/Image/RWB%20Formula.jpg?raw=true" width = '60%'>
 </p>
 
 <p align="justify">
@@ -38,7 +38,7 @@ Where it basically calculate the energy of each wavelet decomposition result and
 
 ### Bispectrum-Gaussian
 <p align="center">
-    <img src="https://github.com/Fulkyhariz/EEG-Alcohol-Classification/blob/main/Image/Bispectrum%20paper.png?raw=true" width = '80%'>
+    <img src="https://github.com/Fulkyhariz/EEG-Alcohol-Classification/blob/main/Image/Bispectrum%20paper.png?raw=true" width = '60%'>
 </p>
 
 <p align="justify">
@@ -46,7 +46,7 @@ The filter size that is used is a 5x5 2d gaussian filter, with follow the quadra
 </p>
 
 <p align="center">
-    <img src="https://github.com/Fulkyhariz/EEG-Alcohol-Classification/blob/main/Image/filter_shape.drawio-01.png?raw=true" width = '100%'>
+    <img src="https://github.com/Fulkyhariz/EEG-Alcohol-Classification/blob/main/Image/filter_shape.drawio-01.png?raw=true" width = '80%'>
 </p>
 
 <p align="justify">
@@ -54,5 +54,5 @@ The filtered feature then will be pooled using average pool with pool size 5x5 f
 </p>
 
 <p align="center">
-    <img src="https://github.com/Fulkyhariz/EEG-Alcohol-Classification/blob/main/Image/bispec_feature_contour.png?raw=true" width = '80%'>
+    <img src="https://github.com/Fulkyhariz/EEG-Alcohol-Classification/blob/main/Image/bispec_feature_contour.png?raw=true" width = '60%'>
 </p>
