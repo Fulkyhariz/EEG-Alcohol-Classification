@@ -74,6 +74,19 @@ The filtered feature then will be pooled using average pool with pool size 5x5 f
     <img src="https://github.com/Fulkyhariz/EEG-Alcohol-Classification/blob/main/Image/bispec_feature_contour.png?raw=true" width = '60%'>
 </p>
 
+### Dimension Variation
+The feature's dimension will be varied according to:
+|      Dimension Variation     |      Dimension     |
+|------------------------------|--------------------|
+|      RWB 1D                  |      1 x 366       |
+|      RWB 2D                  |      61 x 6        |
+
+|      Dimension Variation       |      Dimension     |
+|--------------------------------|--------------------|
+|      Bispectrum    1D          |      1 x 1525      |
+|      Bispectrum    2D          |      61 x 5 x5     |
+|      Bispectrum    2D Flat     |      61 x 25       |
+
 ## Model Architechture
 
 This project uses 2 kinds of classifier, CNN and ANN, the CNN will uses Conv1D and Conv2D according to the feature dimension variation.
@@ -119,3 +132,44 @@ The model evaluation is using 2-fold cross validation as seen in this image:
     <img src="https://github.com/Fulkyhariz/EEG-Alcohol-Classification/blob/main/Image/cross%20validation.drawio.png?raw=true" width = '80%'>
 </p>
 
+### Comparing CNN and ANN in RWB method
+
+<p align="center">
+    <img src="https://github.com/Fulkyhariz/EEG-Alcohol-Classification/blob/main/Image/Table%20RWB.jpg?raw=true" width = '80%'>
+</p>
+
+<p align="center">
+    <img src="https://github.com/Fulkyhariz/EEG-Alcohol-Classification/blob/main/Image/Canvas-01.png?raw=true" width = '80%'>
+</p>
+
+### Comparing CNN and ANN in Bispectrum-Gaussian method
+
+<p align="center">
+    <img src="https://github.com/Fulkyhariz/EEG-Alcohol-Classification/blob/main/Image/Table%20Bispec.jpg?raw=true" width = '80%'>
+</p>
+
+<p align="center">
+    <img src="https://github.com/Fulkyhariz/EEG-Alcohol-Classification/blob/main/Image/Canvas-02.png?raw=true" width = '80%'>
+</p>
+
+### Comparing Accuracy of RWB and Bispectrum method
+
+<p align="center">
+    <img src="https://github.com/Fulkyhariz/EEG-Alcohol-Classification/blob/main/Image/Table%20RWB%20Bispectrum.jpg?raw=true" width = '80%'>
+</p>
+
+<p align="center">
+    <img src="https://github.com/Fulkyhariz/EEG-Alcohol-Classification/blob/main/Image/Canvas-03.png?raw=true" width = '80%'>
+</p>
+
+### Comparing the Accuracy of the Lag Varation of RWB method
+
+<p align="center">
+    <img src="https://github.com/Fulkyhariz/EEG-Alcohol-Classification/blob/main/Image/Table%20LAG.jpg?raw=true" width = '80%'>
+</p>
+
+<p align="center">
+    <img src="https://github.com/Fulkyhariz/EEG-Alcohol-Classification/blob/main/Image/Canvas-04.png?raw=true" width = '80%'>
+</p>
+
+From this comparison we can imply that, for EEG Alcoholic signal classification, the RWB method is better than Bispectrum-Gaussian in terms of overall acurracy, and also the higher the lag value, the more information its contains, and the higher the accuracy.
